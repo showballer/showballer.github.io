@@ -1090,7 +1090,7 @@ body span {
   z-index: 40;
   height: 90vh;
   width: 100%;
-  background-image: url("/images/theme/welcome-image.jpg");
+  background-image: url("/images/theme/light_large.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1107,7 +1107,7 @@ body span {
   padding: 1em 0.2em;
   font-family: 'Quicksand', 'Vollkorn', serif;
   font-weight: 300;
-  color: #fff;
+  color: #5e615e;
   margin: 0;
 }
 @media (max-width: 768px) {

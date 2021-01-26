@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: yuanyun
+ * @Date: 2021-01-25 08:58:55
+ * @LastEditors: yuanyun
+ * @LastEditTime: 2021-01-26 14:06:38
+ */
 !function (window, document) {
   var rootElement = document.documentElement;
   var toggleElement = document.getElementById('color-toggle');
@@ -64,6 +72,11 @@
     if (!toggleElement) return;
     toggleElement.addEventListener('click', function () {
       var mode = this.getAttribute(toggleAttribute) === 'light' ? 'dark' : 'light';
+      if(mode==="dark"){
+        $(".preview-image").css("background-image", "url(" + CONFIG.preview.background.dark + ")");
+      } else {
+        $(".preview-image").css("background-image", "url(" + CONFIG.preview.background.default + ")");
+      }
       setColorMode(mode);
       setIcon(mode);
       setHighlightStyle(mode);
